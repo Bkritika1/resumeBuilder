@@ -73,4 +73,4 @@ function renderForm(){
 
 }
 renderForm();
-console.log(formData);
+

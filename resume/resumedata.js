@@ -1,14 +1,14 @@
 const resumeData = {
     basicInfo: [
-      { name: "firstname", label: "First Name", type: "text", required: true },
-      { name: "middlename", label: "Middle Name", type: "text", required: false },
-      { name: "lastname", label: "Last Name", type: "text", required: true },
-      { name: "email", label: "Email", type: "email", required: true },
-      { name: "phoneno", label: "Phone Number", type: "tel", required: true },
-      { name: "address", label: "Address", type: "text", required: true },
-      { name: "designation", label: "Designation", type: "text", required: true },
-      { name: "summary", label: "Summary", type: "textarea", required: false },
-      { name: "image", label: "Profile Image", type: "file", required: false }
+      { name: "firstname", label: "First Name", type: "text"},
+      { name: "middlename", label: "Middle Name", type: "text"},
+      { name: "lastname", label: "Last Name", type: "text" },
+      { name: "email", label: "Email", type: "email" },
+      { name: "phoneno", label: "Phone Number", type: "tel" },
+      { name: "address", label: "Address", type: "text" },
+      { name: "designation", label: "Designation", type: "text"},
+      { name: "summary", label: "Summary", type: "textarea"},
+      { name: "image", label: "Profile Image", type: "file" }
     ],
     sections: {
       projects: {

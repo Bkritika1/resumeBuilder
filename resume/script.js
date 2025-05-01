@@ -17,9 +17,6 @@ function renderbasicInfo() {
         input.type = field.type;
       }
   
-      input.name = field.name;
-      if (field.required) input.required = true;
-  
       formgroup.appendChild(label);
       formgroup.appendChild(input);
       container.appendChild(formgroup); 
@@ -28,6 +25,10 @@ function renderbasicInfo() {
   
   renderbasicInfo();
   
+
+  function renderSections(){
+   
+  }
 
 
 

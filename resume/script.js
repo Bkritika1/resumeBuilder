@@ -1,6 +1,6 @@
 
 function renderbasicInfo() {
-    const container = document.getElementById("formContainer"); // ✅ get container
+    const container = document.getElementById("formContainer"); 
   
     resumeData.basicInfo.forEach(field => {
       const formgroup = document.createElement("div");
@@ -24,10 +24,10 @@ function renderbasicInfo() {
   }
   
   renderbasicInfo();
-  
+
 
   function renderSections(){
-   
+  
   }
 
 

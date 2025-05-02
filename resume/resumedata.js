@@ -1,8 +1,9 @@
 const resumeData = {
-    basicInfo: [
-      { name: "firstname", label: "First Name", type: "text"},
+    Section1: [
+      { name: "firstname", label: "First Name", type: "text", required: true},
       { name: "middlename", label: "Middle Name", type: "text"},
       { name: "lastname", label: "Last Name", type: "text" },
+      {name:"D.O.B", label:"D.O.B", type:"date"},
       { name: "email", label: "Email", type: "email" },
       { name: "phoneno", label: "Phone Number", type: "tel" },
       { name: "address", label: "Address", type: "text" },
@@ -10,35 +11,38 @@ const resumeData = {
       { name: "summary", label: "Summary", type: "textarea"},
       { name: "image", label: "Profile Image", type: "file" }
     ],
-    sections: {
+    Sections2n: {
       projects: {
         label: "Projects",
-        fields: ["proj_title", "proj_link", "proj_description"]
+        fields: [
+          { label: "proj_title", type:"text", reuired:true},
+           { label: "proj_link", type:"text",reuired:true},
+            {label:"proj_description", type:"text", required:false}
+          ]
       },
       skills: {
         label: "Skills",
-        fields: ["skill"]
+        fields: [{type:"text",label:"skill"}]
       },
       achievements: {
         label: "Achievements",
-        fields: ["achieve_title", "achieve_description"]
+        fields: [{type:"text",label:"achieve_title", required:false}, {label:"achieve_description", type:"text",required:false}]
       },
       education: {
         label: "Education",
-        fields: ["edu_school", "edu_degree", "edu_city", "edu_start_date", "edu_graduation_date", "edu_description"]
+        fields: [{label:"edu_school",type:"text"},{label:"edu_degree", type:"text"}, {label:"edu_city", type:"text"}, {label:"edu_start_date",type:"text"}, {label:"edu_graduation_date",type:"text"},{ label:"edu_description",type:"text"}]
       },
       experience: {
         label: "Experience",
-        fields: ["exp_title", "exp_organization", "exp_location", "exp_start_date", "exp_end_date", "exp_description"]
+        fields: [{label:"exp_title",type:"text"}, {label:"exp_organization", type:"text"}, {label:"exp_location",type:"text"}, {label:"exp_start_date", type:"number"},{label:"exp_end_date", type:"number"}, {label:"exp_description",type:"text"}]
       },
       certifications: {
         label: "Certifications",
-        fields: ["certification_title", "certification_organization", "certification_date"]
+        fields: [{label:"certification_title",type:"text"}, {label:"certification_organization",type:"text"}, {label:"certification_date", type:"number"}]
       },
-      languages: {
-        label: "Languages",
-        fields: ["language_name", "language_proficiency"]
-      }
+      // languages: {
+      //   label: "Languages",
+      //   fields: ["language_name", "language_proficiency"]
+      // }
     }
   };
-  
